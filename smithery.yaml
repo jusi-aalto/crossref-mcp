@@ -1,0 +1,46 @@
+name: crossref-mcp
+description: "MCP server for validating and formatting academic references using CrossRef API"
+version: "1.0.0"
+
+# Server configuration
+server:
+  runtime: python
+  entry_point: crossref_mcp.py
+  port: 8000
+
+# Metadata
+metadata:
+  author: "Your Name"
+  license: "MIT"
+  repository: "https://github.com/yourusername/crossref-mcp"
+  tags:
+    - academic
+    - citations
+    - crossref
+    - references
+    - research
+    - doi
+    - mcp
+  
+# Dependencies
+dependencies:
+  python: ">=3.8"
+  packages:
+    - requests
+    - mcp
+
+# Tools provided by this server
+tools:
+  - name: validate_references
+    description: "Validates a batch of academic references against CrossRef database"
+  - name: format_reference
+    description: "Formats a single reference or DOI with detailed metadata"
+
+# Environment variables (optional)
+environment:
+  # No environment variables needed - CrossRef API is public
+
+# Health check
+health_check:
+  path: /health
+  interval: 30
