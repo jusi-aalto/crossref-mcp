@@ -1,9 +1,20 @@
 # CrossRef MCP Server
 
+[![smithery badge](https://smithery.ai/badge/crossref-mcp)](https://smithery.ai/server/crossref-mcp)
+
 MCP server for validating and formatting academic references using the CrossRef API.
 
 ## Installation
 
+### Installing via Smithery
+
+To install crossref-mcp for Claude Desktop automatically via [Smithery](https://smithery.ai/server/crossref-mcp):
+
+```bash
+npx -y @smithery/cli install crossref-mcp --client claude
+```
+
+### Manual Installation
 1. Install dependencies:
    ```bash
    pip install -r requirements.txt
